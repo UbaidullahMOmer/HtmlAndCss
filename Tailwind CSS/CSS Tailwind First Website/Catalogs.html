@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="w-[calc(100%-60px)] mx-auto pt-8 px-4 flex justify-between items-center"
+    >
+      <div class="flex-shrink-0">
+        <img src="logo.png" alt="Logo" class="h-12" />
+      </div>
+      <ul class="flex space-x-8 text-black">
+        <li class="relative cursor-pointer">Home</li>
+        <li class="relative cursor-pointer flex items-center">
+          Catalogs <img src="Dropdown.png" alt="" class="ml-1" />
+        </li>
+        <li class="relative cursor-pointer">Contact</li>
+        <li class="relative cursor-pointer">About</li>
+      </ul>
+      <div class="flex space-x-[16px]">
+        <i class="ri-search-line" class="text-[24px] cursor-pointer"></i>
+        <i
+          class="ri-shopping-cart-2-line"
+          class="text-[24px] cursor-pointer"
+        ></i>
+      </div>
+    </nav>
+    <div
+      class="gap- flex flex-col items-center justify-center mt-[64px] pl-[154px] pr-[154px]"
+    >
+      <h1 class="font-lind text-[48px]">Products</h1>
+      <span class="text-[#9C9C9C]">
+        Home > <span class="text-[#1E1E1E]">Products</span>
+      </span>
+    </div>
+
+    <div
+      class="flex flex-col items-center gap-[48px] pl-[154px] pr-[154px] pt-[64px]"
+    >
+      <div class="flex w-full items-center justify-between">
+        <div
+          class="flex cursor-pointer items-center gap-[10px] border-[1px] border-[#1E1E1E] px-[24px] py-[14px]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3 7H6"
+              stroke="#313131"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3 17H9"
+              stroke="#313131"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 17H21"
+              stroke="#313131"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15 7H21"
+              stroke="#313131"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 7C6 6.06812 6 5.60218 6.15224 5.23463C6.35523 4.74458 6.74458 4.35523 7.23463 4.15224C7.60218 4 8.06812 4 9 4C9.93188 4 10.3978 4 10.7654 4.15224C11.2554 4.35523 11.6448 4.74458 11.8478 5.23463C12 5.60218 12 6.06812 12 7C12 7.93188 12 8.39782 11.8478 8.76537C11.6448 9.25542 11.2554 9.64477 10.7654 9.84776C10.3978 10 9.93188 10 9 10C8.06812 10 7.60218 10 7.23463 9.84776C6.74458 9.64477 6.35523 9.25542 6.15224 8.76537C6 8.39782 6 7.93188 6 7Z"
+              stroke="#313131"
+              stroke-width="1.5"
+            />
+            <path
+              d="M12 17C12 16.0681 12 15.6022 12.1522 15.2346C12.3552 14.7446 12.7446 14.3552 13.2346 14.1522C13.6022 14 14.0681 14 15 14C15.9319 14 16.3978 14 16.7654 14.1522C17.2554 14.3552 17.6448 14.7446 17.8478 15.2346C18 15.6022 18 16.0681 18 17C18 17.9319 18 18.3978 17.8478 18.7654C17.6448 19.2554 17.2554 19.6448 16.7654 19.8478C16.3978 20 15.9319 20 15 20C14.0681 20 13.6022 20 13.2346 19.8478C12.7446 19.6448 12.3552 19.2554 12.1522 18.7654C12 18.3978 12 17.9319 12 17Z"
+              stroke="#313131"
+              stroke-width="1.5"
+            />
+          </svg>
+          <span class="font-[lato] text-[#1E1E1E]"> Fitler </span>
+        </div>
+        <div
+          class="flex cursor-pointer items-center gap-[10px] border-[1px] border-[#1E1E1E] px-[24px] py-[14px]"
+        >
+          <span class="font-[lato] text-[#1E1E1E]">
+            Alphabetically, A - Z
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+              stroke="#313131"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 w-full gap-[56px]">
+        <div class="flex flex-col gap-[24px]">
+          <img src="https://picsum.photos/1000/1000" class="w-full" alt="" />
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="text-[20px] font-[600] text-[#1E1E1E]">
+                Bloux Anti-dandruff
+              </span>
+              <span class="text-[16px] font-[400] text-[#E6A747]">
+                2400 Pkr
+              </span>
+            </div>
+            <div class="flex items-center gap-[14px]">
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M16.2192 3.82846C13.9844 2.45769 12.034 3.01009 10.8623 3.89001C10.3818 4.2508 10.1417 4.43119 10.0003 4.43119C9.85899 4.43119 9.61882 4.2508 9.13832 3.89001C7.96667 3.01009 6.01623 2.45769 3.78152 3.82846C0.848716 5.62745 0.185092 11.5624 6.94993 16.5695C8.23842 17.5232 8.88266 18 10.0003 18C11.118 18 11.7622 17.5232 13.0507 16.5695C19.8156 11.5624 19.1519 5.62745 16.2192 3.82846Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M6.66699 13.8333L13.9337 13.2277C16.2075 13.0383 16.7179 12.5417 16.9699 10.2741L17.5003 5.5"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 5.5H18.3333"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.99967 18.8333C5.92015 18.8333 6.66634 18.0871 6.66634 17.1667C6.66634 16.2462 5.92015 15.5 4.99967 15.5C4.0792 15.5 3.33301 16.2462 3.33301 17.1667C3.33301 18.0871 4.0792 18.8333 4.99967 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14.1667 18.8333C15.0871 18.8333 15.8333 18.0871 15.8333 17.1667C15.8333 16.2462 15.0871 15.5 14.1667 15.5C13.2462 15.5 12.5 16.2462 12.5 17.1667C12.5 18.0871 13.2462 18.8333 14.1667 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.66699 17.1667H12.5003"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 2.16675H2.47199C3.25923 2.16675 3.94544 2.68724 4.13638 3.42919L6.61576 13.0638C6.74105 13.5507 6.63383 14.0665 6.32386 14.4681L5.5271 15.5001"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <img src="https://picsum.photos/1000/1000" class="w-full" alt="" />
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="text-[20px] font-[600] text-[#1E1E1E]">
+                Bloux Anti-dandruff
+              </span>
+              <span class="text-[16px] font-[400] text-[#E6A747]">
+                2400 Pkr
+              </span>
+            </div>
+            <div class="flex items-center gap-[14px]">
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M16.2192 3.82846C13.9844 2.45769 12.034 3.01009 10.8623 3.89001C10.3818 4.2508 10.1417 4.43119 10.0003 4.43119C9.85899 4.43119 9.61882 4.2508 9.13832 3.89001C7.96667 3.01009 6.01623 2.45769 3.78152 3.82846C0.848716 5.62745 0.185092 11.5624 6.94993 16.5695C8.23842 17.5232 8.88266 18 10.0003 18C11.118 18 11.7622 17.5232 13.0507 16.5695C19.8156 11.5624 19.1519 5.62745 16.2192 3.82846Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M6.66699 13.8333L13.9337 13.2277C16.2075 13.0383 16.7179 12.5417 16.9699 10.2741L17.5003 5.5"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 5.5H18.3333"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.99967 18.8333C5.92015 18.8333 6.66634 18.0871 6.66634 17.1667C6.66634 16.2462 5.92015 15.5 4.99967 15.5C4.0792 15.5 3.33301 16.2462 3.33301 17.1667C3.33301 18.0871 4.0792 18.8333 4.99967 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14.1667 18.8333C15.0871 18.8333 15.8333 18.0871 15.8333 17.1667C15.8333 16.2462 15.0871 15.5 14.1667 15.5C13.2462 15.5 12.5 16.2462 12.5 17.1667C12.5 18.0871 13.2462 18.8333 14.1667 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.66699 17.1667H12.5003"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 2.16675H2.47199C3.25923 2.16675 3.94544 2.68724 4.13638 3.42919L6.61576 13.0638C6.74105 13.5507 6.63383 14.0665 6.32386 14.4681L5.5271 15.5001"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <img src="https://picsum.photos/1000/1000" class="w-full" alt="" />
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="text-[20px] font-[600] text-[#1E1E1E]">
+                Bloux Anti-dandruff
+              </span>
+              <span class="text-[16px] font-[400] text-[#E6A747]">
+                2400 Pkr
+              </span>
+            </div>
+            <div class="flex items-center gap-[14px]">
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M16.2192 3.82846C13.9844 2.45769 12.034 3.01009 10.8623 3.89001C10.3818 4.2508 10.1417 4.43119 10.0003 4.43119C9.85899 4.43119 9.61882 4.2508 9.13832 3.89001C7.96667 3.01009 6.01623 2.45769 3.78152 3.82846C0.848716 5.62745 0.185092 11.5624 6.94993 16.5695C8.23842 17.5232 8.88266 18 10.0003 18C11.118 18 11.7622 17.5232 13.0507 16.5695C19.8156 11.5624 19.1519 5.62745 16.2192 3.82846Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M6.66699 13.8333L13.9337 13.2277C16.2075 13.0383 16.7179 12.5417 16.9699 10.2741L17.5003 5.5"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 5.5H18.3333"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.99967 18.8333C5.92015 18.8333 6.66634 18.0871 6.66634 17.1667C6.66634 16.2462 5.92015 15.5 4.99967 15.5C4.0792 15.5 3.33301 16.2462 3.33301 17.1667C3.33301 18.0871 4.0792 18.8333 4.99967 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14.1667 18.8333C15.0871 18.8333 15.8333 18.0871 15.8333 17.1667C15.8333 16.2462 15.0871 15.5 14.1667 15.5C13.2462 15.5 12.5 16.2462 12.5 17.1667C12.5 18.0871 13.2462 18.8333 14.1667 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.66699 17.1667H12.5003"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 2.16675H2.47199C3.25923 2.16675 3.94544 2.68724 4.13638 3.42919L6.61576 13.0638C6.74105 13.5507 6.63383 14.0665 6.32386 14.4681L5.5271 15.5001"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <img src="https://picsum.photos/1000/1000" class="w-full" alt="" />
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="text-[20px] font-[600] text-[#1E1E1E]">
+                Bloux Anti-dandruff
+              </span>
+              <span class="text-[16px] font-[400] text-[#E6A747]">
+                2400 Pkr
+              </span>
+            </div>
+            <div class="flex items-center gap-[14px]">
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M16.2192 3.82846C13.9844 2.45769 12.034 3.01009 10.8623 3.89001C10.3818 4.2508 10.1417 4.43119 10.0003 4.43119C9.85899 4.43119 9.61882 4.2508 9.13832 3.89001C7.96667 3.01009 6.01623 2.45769 3.78152 3.82846C0.848716 5.62745 0.185092 11.5624 6.94993 16.5695C8.23842 17.5232 8.88266 18 10.0003 18C11.118 18 11.7622 17.5232 13.0507 16.5695C19.8156 11.5624 19.1519 5.62745 16.2192 3.82846Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M6.66699 13.8333L13.9337 13.2277C16.2075 13.0383 16.7179 12.5417 16.9699 10.2741L17.5003 5.5"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 5.5H18.3333"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.99967 18.8333C5.92015 18.8333 6.66634 18.0871 6.66634 17.1667C6.66634 16.2462 5.92015 15.5 4.99967 15.5C4.0792 15.5 3.33301 16.2462 3.33301 17.1667C3.33301 18.0871 4.0792 18.8333 4.99967 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14.1667 18.8333C15.0871 18.8333 15.8333 18.0871 15.8333 17.1667C15.8333 16.2462 15.0871 15.5 14.1667 15.5C13.2462 15.5 12.5 16.2462 12.5 17.1667C12.5 18.0871 13.2462 18.8333 14.1667 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.66699 17.1667H12.5003"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 2.16675H2.47199C3.25923 2.16675 3.94544 2.68724 4.13638 3.42919L6.61576 13.0638C6.74105 13.5507 6.63383 14.0665 6.32386 14.4681L5.5271 15.5001"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <img src="https://picsum.photos/1000/1000" class="w-full" alt="" />
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="text-[20px] font-[600] text-[#1E1E1E]">
+                Bloux Anti-dandruff
+              </span>
+              <span class="text-[16px] font-[400] text-[#E6A747]">
+                2400 Pkr
+              </span>
+            </div>
+            <div class="flex items-center gap-[14px]">
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M16.2192 3.82846C13.9844 2.45769 12.034 3.01009 10.8623 3.89001C10.3818 4.2508 10.1417 4.43119 10.0003 4.43119C9.85899 4.43119 9.61882 4.2508 9.13832 3.89001C7.96667 3.01009 6.01623 2.45769 3.78152 3.82846C0.848716 5.62745 0.185092 11.5624 6.94993 16.5695C8.23842 17.5232 8.88266 18 10.0003 18C11.118 18 11.7622 17.5232 13.0507 16.5695C19.8156 11.5624 19.1519 5.62745 16.2192 3.82846Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M6.66699 13.8333L13.9337 13.2277C16.2075 13.0383 16.7179 12.5417 16.9699 10.2741L17.5003 5.5"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 5.5H18.3333"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.99967 18.8333C5.92015 18.8333 6.66634 18.0871 6.66634 17.1667C6.66634 16.2462 5.92015 15.5 4.99967 15.5C4.0792 15.5 3.33301 16.2462 3.33301 17.1667C3.33301 18.0871 4.0792 18.8333 4.99967 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14.1667 18.8333C15.0871 18.8333 15.8333 18.0871 15.8333 17.1667C15.8333 16.2462 15.0871 15.5 14.1667 15.5C13.2462 15.5 12.5 16.2462 12.5 17.1667C12.5 18.0871 13.2462 18.8333 14.1667 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.66699 17.1667H12.5003"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 2.16675H2.47199C3.25923 2.16675 3.94544 2.68724 4.13638 3.42919L6.61576 13.0638C6.74105 13.5507 6.63383 14.0665 6.32386 14.4681L5.5271 15.5001"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <img src="https://picsum.photos/1000/1000" class="w-full" alt="" />
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="text-[20px] font-[600] text-[#1E1E1E]">
+                Bloux Anti-dandruff
+              </span>
+              <span class="text-[16px] font-[400] text-[#E6A747]">
+                2400 Pkr
+              </span>
+            </div>
+            <div class="flex items-center gap-[14px]">
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M16.2192 3.82846C13.9844 2.45769 12.034 3.01009 10.8623 3.89001C10.3818 4.2508 10.1417 4.43119 10.0003 4.43119C9.85899 4.43119 9.61882 4.2508 9.13832 3.89001C7.96667 3.01009 6.01623 2.45769 3.78152 3.82846C0.848716 5.62745 0.185092 11.5624 6.94993 16.5695C8.23842 17.5232 8.88266 18 10.0003 18C11.118 18 11.7622 17.5232 13.0507 16.5695C19.8156 11.5624 19.1519 5.62745 16.2192 3.82846Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M6.66699 13.8333L13.9337 13.2277C16.2075 13.0383 16.7179 12.5417 16.9699 10.2741L17.5003 5.5"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 5.5H18.3333"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.99967 18.8333C5.92015 18.8333 6.66634 18.0871 6.66634 17.1667C6.66634 16.2462 5.92015 15.5 4.99967 15.5C4.0792 15.5 3.33301 16.2462 3.33301 17.1667C3.33301 18.0871 4.0792 18.8333 4.99967 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14.1667 18.8333C15.0871 18.8333 15.8333 18.0871 15.8333 17.1667C15.8333 16.2462 15.0871 15.5 14.1667 15.5C13.2462 15.5 12.5 16.2462 12.5 17.1667C12.5 18.0871 13.2462 18.8333 14.1667 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.66699 17.1667H12.5003"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 2.16675H2.47199C3.25923 2.16675 3.94544 2.68724 4.13638 3.42919L6.61576 13.0638C6.74105 13.5507 6.63383 14.0665 6.32386 14.4681L5.5271 15.5001"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <img src="https://picsum.photos/1000/1000" class="w-full" alt="" />
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="text-[20px] font-[600] text-[#1E1E1E]">
+                Bloux Anti-dandruff
+              </span>
+              <span class="text-[16px] font-[400] text-[#E6A747]">
+                2400 Pkr
+              </span>
+            </div>
+            <div class="flex items-center gap-[14px]">
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M16.2192 3.82846C13.9844 2.45769 12.034 3.01009 10.8623 3.89001C10.3818 4.2508 10.1417 4.43119 10.0003 4.43119C9.85899 4.43119 9.61882 4.2508 9.13832 3.89001C7.96667 3.01009 6.01623 2.45769 3.78152 3.82846C0.848716 5.62745 0.185092 11.5624 6.94993 16.5695C8.23842 17.5232 8.88266 18 10.0003 18C11.118 18 11.7622 17.5232 13.0507 16.5695C19.8156 11.5624 19.1519 5.62745 16.2192 3.82846Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex h-[36px] w-[36px] items-center justify-center rounded-full border-[1px] border-[#E3E3E3]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    d="M6.66699 13.8333L13.9337 13.2277C16.2075 13.0383 16.7179 12.5417 16.9699 10.2741L17.5003 5.5"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 5.5H18.3333"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.99967 18.8333C5.92015 18.8333 6.66634 18.0871 6.66634 17.1667C6.66634 16.2462 5.92015 15.5 4.99967 15.5C4.0792 15.5 3.33301 16.2462 3.33301 17.1667C3.33301 18.0871 4.0792 18.8333 4.99967 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14.1667 18.8333C15.0871 18.8333 15.8333 18.0871 15.8333 17.1667C15.8333 16.2462 15.0871 15.5 14.1667 15.5C13.2462 15.5 12.5 16.2462 12.5 17.1667C12.5 18.0871 13.2462 18.8333 14.1667 18.8333Z"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M6.66699 17.1667H12.5003"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 2.16675H2.47199C3.25923 2.16675 3.94544 2.68724 4.13638 3.42919L6.61576 13.0638C6.74105 13.5507 6.63383 14.0665 6.32386 14.4681L5.5271 15.5001"
+                    stroke="#1E1E1E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

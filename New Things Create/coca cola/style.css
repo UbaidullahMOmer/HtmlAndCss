@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+HTML,
+body {
+  min-height: 100vh;
+  background-color: #cdcdcd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  margin-top: -50px;
+  height: 106.6vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.product {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 170px;
+  z-index: 2;
+  width: 500px;
+  transition: 0.7s;
+}
+
+.product .soda {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  --left: 0px;
+  background: var(--url) var(--left), url(mockup.png);
+  background-size: auto 100%;
+  width: 280px;
+  aspect-ratio: 2 / 4;
+  background-blend-mode: multiply;
+  transition: 0.8s;
+  mask-image: url(mockup.png);
+  mask-size: auto 100%;
+}
+
+.soda:nth-child(2) {
+  opacity: 0;
+}
+
+.product:hover {
+  bottom: 300px;
+}
+
+.product:hover .soda:nth-child(2) {
+  opacity: 1;
+  --left: 550px;
+}
+.product:hover .soda:nth-child(1) {
+  opacity: 0;
+  --left: 500px;
+}
+
+.rock {
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.rock img:nth-child(1) {
+  position: absolute;
+  height: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+.rock img:nth-child(2) {
+  position: absolute;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  transition: 0.7s;
+}
+
+.rock img:nth-child(3) {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: -80px;
+  rotate: -25deg;
+  transition: 0.7s;
+}
+
+.banner:has(.product:hover) .rock img:nth-child(1) {
+  transform: translateX(-50%) translateY(50px);
+}
+
+.banner:has(.product:hover) .rock img:nth-child(2) {
+  transform: translateX(-100px) translateY(100px);
+}
+
+.banner:has(.product:hover) .rock img:nth-child(3) {
+  transform: translateX(100px) translateY(100px);
+}
+
+@media screen and (max-width: 1023px) {
+  .soda {
+    width: 400px;
+  }
+
+  .banner{
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .soda {
+    width: 250px;
+  }
+
+  .banner{
+    height: 110vh;
+  }
+}

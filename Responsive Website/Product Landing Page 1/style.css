@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body {
+   width: 100%;
+   height: 100%;
+}
+
+.container{
+   height: 100vh;
+   background: linear-gradient(90deg, #b7b78a 50%, #3c6255 50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card{
+   width: 90%;
+   height: 90vh;
+   background-color: #dddddd;
+   position: relative;
+   overflow: hidden;
+}
+
+.nav{
+   width: 90%;
+   height: 15vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 auto;
+   transition: .5s;
+}
+
+.logo{
+   width: 60px;
+   height: 60px;
+   background-color: transparent;
+   border: 3px solid #3c6255;
+   border-radius: 50%;
+   border-right-color: transparent;
+   position: relative;
+}
+
+.logo::before{
+   content: "Shopify";
+   color: black;
+   font-size: 35px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-10%,-50%);
+   font-family: Arizonia;
+}
+
+.nav-list{
+   display: flex;
+   align-items: center;
+   transition: .5s; 
+}
+
+.li1{
+   list-style: none;
+   padding: 20px;
+   text-decoration: none;
+}
+
+.a1{
+   font-size: 18px;
+   font-weight: 500;
+   color: black;
+   text-decoration: none;
+   position: relative;
+}
+
+.a1::before{
+   content: "";
+   position: absolute;
+   bottom: -5px;
+   left: 0px;
+   width: 0;
+   height: 3px;
+   background-color: black;
+   transition: .5s ease-in;
+}
+
+.a1:hover::before{
+   width: 100%;
+}
+
+.menu{
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 900;
+   display: none;
+}
+
+.hero{
+   width: 100%;
+   height: calc(100% - 62px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 50px;
+}
+
+.hero-image{
+   width: 45vw;
+   height: 100%;
+   margin-bottom: 50px;
+}
+
+.content{
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 20px;
+   flex-direction: column;
+   margin-bottom: 50px;
+   border-left: 4px solid #3c6255;
+   padding: 20px 50px;
+}
+
+.h3{
+   font-size: 20px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: rgb(73, 73, 73);
+}
+
+.h1{
+   font-size: 50px;
+   color: #3c6255;
+}
+
+.p{
+   font-size: 18px;
+   color: black;
+   line-height: 30px;
+}
+
+.button1{
+   padding: 15px 30px;
+   font-size: 18px;
+   font-weight: 600;
+   color: white;
+   border: none;
+   background-color: #3c6255;
+   cursor: pointer;
+   transition: .5s;
+}
+
+.button1:hover{
+   background-color: white;
+   color: #3c6255;
+}
+
+@media (max-width: 1063px) {
+   .h1{
+      font-size: 45px;
+   }
+
+   .p{
+      font-size: 17px;
+   }
+}
+
+@media (max-width: 1025px) {
+   .h1{
+      font-size: 40px;
+   }
+
+   .p{
+      font-size: 17px;
+      line-height: 25px;
+   }
+
+   .h3{
+      font-size: 19px;
+   }
+
+   .button1{
+      padding: 14px 28px;
+      font-size: 17px;
+   }
+
+   .hero-image{
+      width: 43vw;
+   }
+}
+
+@media (max-width: 986px) {
+   .h1{
+      font-size: 35px;
+   }
+
+   .p{
+      font-size: 16px;
+      line-height: 20px;
+   }
+   
+   .h3{
+      font-size: 18px;
+   }
+   
+   .button1{
+      padding: 13px 26px;
+      font-size: 16px;
+   }
+
+   .hero-image{
+      width: 41vw;
+   }
+}
+
+@media (max-width: 930px) {
+
+   .content{
+      gap: 17px;
+      padding: 20px 40px;
+   }
+
+   .h1{
+      font-size: 33px;
+   }
+
+   .p{
+      font-size: 15px;
+      line-height: 20px;
+   }
+
+   
+   .h3{
+      font-size: 17px;
+   }
+
+   .button1{
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight:600;
+   }
+
+   .hero-image{
+      width: 38vw;
+      height: 90%;
+   }
+}
+
+@media (max-width: 840px) {
+
+   .content{
+      gap: 14px;
+      padding: 20px 30px;
+   }
+
+
+   .h1{
+      font-size: 30px;
+   }
+
+   .p{
+      font-size: 14px;
+      line-height: 18px;
+   }
+
+   
+   .h3{
+      font-size: 14px;
+   }
+
+   .button1{
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight:600;
+   }
+
+   .hero-image{
+      width: 33vw;
+      height: 80%;
+   }
+}
+
+@media (max-width: 770px) {
+   .h1{
+      font-size: 28px;
+   }
+
+   .p{
+      font-size: 13px;
+      line-height: 16px;
+   }
+
+   
+   .h3{
+      font-size: 13px;
+   }
+
+   .button1{
+      padding: 10px 18px;
+      font-size: 12px;
+      font-weight:600;
+   }
+
+   .hero-image{
+      width: 35vw;
+      height: 70%;
+   }
+}
+
+
+
+@media (max-width: 660px){
+   .nav-list{
+      position: absolute;
+      flex-direction: column;
+      top: 0;
+      right: -1000%;
+      background-color: #b7b78a;
+      width: 300px;
+      height: 100%;
+      justify-content: center;
+      transition: .5s;
+      display: none;
+   }
+
+   .menu{
+      display: block;
+      z-index: 5;
+      cursor: pointer;
+   }
+
+   .logo{
+      width: 50px;
+      height: 50px;
+   }
+
+   .logo::before{
+    font-size: 29px;
+   }
+
+   .hero{
+      flex-direction: column;
+   }
+
+   .hero-image{
+      width: 250px;
+      height: 60%;
+      margin-bottom: 0px;
+   }
+
+   .content{
+      padding: 13px 30px;
+      gap: 10px;
+   }
+
+   .h3{
+      font-size: 17px;
+   }
+
+   .h1{
+      font-size: 27px;
+   }
+
+   .p{
+      font-size: 13px;
+      line-height: 18px;
+   }
+
+   .button1{
+      padding: 10px 18px;
+      font-size: 12px;
+   }
+}
+
+@media (max-width:400px) {
+   .logo{
+      width: 45px;
+      height: 45px;
+   }
+
+   .logo::before{
+      font-size: 30px;
+      margin-top: 2px;
+   }
+
+   .hero{
+      flex-direction: column;
+   }
+
+   .hero-image{
+      width: 50vw;
+      height: 50%;
+      margin-bottom: 0px;
+   }
+
+   .content{
+      padding: 10px 25px;
+      margin-top: 20px;
+   }
+
+   .h3{
+      font-size: 14px;
+   }
+
+   .h1{
+      font-size: 25px;
+   }
+
+   .p{
+      font-size: 12px;
+      line-height: 16px;
+   }
+
+   .button1{
+      padding: 10px 18px;
+      font-size: 12px;
+   }
+}
+
+@media (max-width:360px) {
+   .logo{
+      width: 40px;
+      height: 40px;
+   }
+
+   .logo::before{
+      font-size: 28px;
+      margin-top: 2px;
+   }
+
+   .hero{
+      flex-direction: column;
+   }
+
+   .hero-image{
+      width: 50vw;
+      height: 50%;
+      margin-bottom: 0px;
+   }
+
+   .content{
+      padding: 10px 25px;
+      margin-top: 20px;
+   }
+
+   .h3{
+      font-size: 14px;
+   }
+
+   .h1{
+      font-size: 23px;
+   }
+
+   .p{
+      font-size: 13px;
+      line-height: 16px;
+   }
+
+   .button1{
+      padding: 9px 16px;
+      font-size: 11px;
+   }
+}
+

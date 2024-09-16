@@ -1,0 +1,105 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    
+}
+.box h1{
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(from -30deg at 50deg 61%,red 0deg,red 90deg,blue 90deg,blue 180deg,green 180deg,green 270deg,yellow 270deg,yellow 360deg);
+    font-size: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);;
+    padding-bottom: 80px;
+    margin-top: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 30px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+.box1{
+    background-image: conic-gradient(red,yellow,green);
+}
+.box2{
+    background-image: conic-gradient(from 45deg,red,yellow,green);
+}
+.box3{
+    background-image: conic-gradient(red,yellow,green,red);
+}
+.box4{
+    background-image: conic-gradient(red 270deg,yellow,green);
+}
+.box5{
+    background-image: repeating-conic-gradient(red 40deg,yellow 50deg,green 60deg);
+}
+.box6{
+    background-image: repeating-conic-gradient(yellow 0deg,yellow 90deg,black 0deg,black 90deg,);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    background-size: 20px 20px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(/Practice/download.jpeg),linear-gradient(red,yellow,blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 4px solid black;
+    margin: 40px; 
+    float: left;
+    
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif
+}
+html,body {
+   width: 100%;
+   height: 100%;
+}
+
+.div1{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(85, 0, 255);
+    float: right;
+}

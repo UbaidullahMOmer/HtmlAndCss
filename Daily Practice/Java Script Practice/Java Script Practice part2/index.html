@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <div class="div1">
+            <button id="changeTextButton">Change Text</button>
+            <p class="p1" id="dynamicText">Original Text</p>
+        </div>
+        
+        <div class="div2">
+            <h2>Chat with ChatGPT</h2>
+            <form class="form" id="chatForm">
+                <input type="text" class="input" id="userMessage" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </form>
+            <p id="chatResponse"></p>
+        </div>
+
+        <div class="div3">
+            <div class="container">
+                <div class="clock">
+                    <span class="hrs" id="hrs">00</span>
+                    <span class="">:</span>
+                    <span class="min" id="min">00</span>
+                    <span class="">:</span>
+                    <span class="sec" id="sec">00</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <video src="particles.mp4.mp4" autoplay muted ></video>
+        <h1 class="footerText"><span>My</span> Name <span>is</span> Asadulah</h1>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

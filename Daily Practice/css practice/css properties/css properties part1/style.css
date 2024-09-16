@@ -1,0 +1,201 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    font-size: 80px;
+    text-align: center;
+}
+.heading:hover{
+    background-color: red;
+    color: white;
+    font-size: 100px;
+}
+.tabel{
+    text-align: center;
+    font-size: 30px;
+}
+.tabel:hover{
+    font-size: 40px;
+    background-color: red;
+    color: white;
+}
+table{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    scale: 100%;
+    scale:1.5;
+    margin: 30px;
+}
+tr:hover{
+    color: white;
+    background-color: red;
+}
+th:hover{
+    background-color: rgba(204, 0, 0, 0.815);
+    color: white;
+}
+td:hover{
+    background-color: rgba(204, 0, 0, 0.815);
+    color: white;
+}
+.Overflow{
+    text-align: center;
+    font-size: 30px;
+}
+.Overflow:hover{
+    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 6px solid red;
+    float: left;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px rgb(210, 0, 0);
+    border-radius: 2px;
+}
+div h1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Cursor{
+    text-align: center;
+    font-size: 30px;
+}
+.Cursor:hover{
+    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.box1{
+     cursor: alias;
+}
+.box2{
+    cursor: all-scroll;
+}
+.box3{
+    cursor: auto;
+}
+.box4{
+    cursor: cell;
+}
+.box5{
+    cursor: context-menu;
+}
+.box6{
+    cursor: col-resize;
+}
+.box7{
+    cursor: copy;
+}
+.box8{
+    cursor: crosshair;
+}
+.box9{
+    cursor: default;
+}
+.box10{
+    cursor: e-resize;
+}
+.box11{
+     cursor: ew-resize;
+}
+.box12{
+    cursor: grab;
+}
+.box13{
+    cursor: grabbing;
+}
+.box14{
+    cursor: help;
+}
+.box15{
+    cursor: move;
+
+}.box16{
+    cursor: n-resize;
+}
+.box17{
+    cursor: ne-resize;
+}
+.box18{
+    cursor: nesw-resize;
+}
+.box19{
+    cursor: ns-resize;
+}
+.box20{
+    cursor: nw-resize;
+}
+.box21{
+    cursor: nwse-resize;
+}
+.box22{
+    cursor: no-drop;
+}
+.box23{
+    cursor: zoom-out;
+}
+.box24{
+    cursor: none;
+}
+.box25{
+    cursor: not-allowed;
+}
+.box26{
+    cursor: pointer;
+}
+.box27{
+    cursor: progress;
+}
+.box28{
+    cursor: row-resize;
+}
+.box29{
+    cursor: s-resize;
+}
+.box30{
+    cursor: se-resize;
+}
+.box31{
+    cursor: sw-resize;
+}
+.box32{
+    cursor: text;
+}
+.box33{
+    cursor: url;
+}
+.box34{
+    cursor: w-resize;
+}
+.box35{
+    cursor: wait;
+}
+.box36{
+    cursor: zoom-in;
+}
+.para{
+    width: 100%;
+    height: 500px;
+    border: 6px solid red;
+    overflow: auto;
+}
+
+*/

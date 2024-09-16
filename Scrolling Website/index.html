@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Animation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <div class="w-full bg-zinc-900 Z">
+      <div class="main parent w-full h-[1000vh] bg-zinc-800 relative top-0 left-0">
+        <div class="w-full sticky top-0 left-0 h-screen">
+          <audio src="" loop autoplay></audio>
+          <canvas class="w-full h-screen" id="frame"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+      const canvas = document.querySelector("canvas");
+      const context = canvas.getContext("2d");
+      let imagesLoaded = 1;
+      const images = [];
+      const frames = { currentIndex: 0, maxIndex: 382 };
+      document.querySelector(".main").addEventListener('hover', function(){
+        document.querySelector("audio").src = "z.mp3";
+      });
+      // document.querySelector(".main").addEventListener('click', function(){
+      //   document.querySelector("audio").src = "z.mp3";
+      // });
+
+      for (let i = 1; i <= frames.maxIndex; i++) {
+        let imageUrl = `./frames/frame_${i.toString().padStart(4, "0")}.jpg`;
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = () => {
+          imagesLoaded++;
+          if (imagesLoaded === frames.maxIndex + 1) {
+            loadImage(frames.currentIndex);
+            startAnimation();
+          }
+        };
+        images.push(img);
+      }
+
+      function loadImage(index) {
+        if (index >= 0 && index <= frames.maxIndex) {
+          const img = images[index];
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+
+          const scaleX = canvas.width / img.width;
+          const scaleY = canvas.height / img.height;
+          const scale = Math.max(scaleX, scaleY);
+
+          const newWidth = img.width * scale;
+          const newHeight = img.height * scale;
+
+          const offsetX = (canvas.width - newWidth) / 2;
+          const offsetY = (canvas.height - newHeight) / 2;
+
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          context.imageSmoothingEnabled = true;
+          context.imageSmoothingQuality = "high";
+          context.drawImage(img, offsetX, offsetY, newWidth, newHeight);
+          frames.currentIndex = index;
+        }
+      }
+
+      function startAnimation() {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: ".parent",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 2,
+            markers: true,
+          }
+        }).to(frames, {
+          currentIndex: frames.maxIndex,
+          onUpdate: () => {
+            loadImage(Math.floor(frames.currentIndex));
+          }
+        });
+      }
+
+      document.querySelector("html").addEventListener("click", function(){
+        onScroll();
+      });
+
+      function onScroll() {
+        document.querySelector("audio").src = "z.mp3";
+      }  
+      
+    </script>
+  </body>
+</html>

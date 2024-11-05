@@ -1,0 +1,67 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif
+}
+html,body {
+   width: 100%;
+   height: 100%;
+}
+
+.hero{
+    height: calc(100% - 100px);
+}
+
+.animation {
+   animation-name: animation;
+   animation-duration: 600s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+}
+
+@keyframes animation {
+   0% {
+       transform: translateX(0%);
+   }
+   50% {
+       transform: translateX(-1000%);
+   }
+   100% {
+       transform: translateX(0%);
+   }
+}
+
+/* .div:hover .rotate1 {
+   transform: translateX(25%) translateY(10%) rotate(-10deg) scale(0.95);
+}
+
+.div:hover .rotate2 {
+   transform: scale(0.95);
+}
+
+.div:hover .rotate3 {
+   transform: translateX(-25%) translateY(12%) rotate(10deg) scale(0.95);
+} */
+
+.rotate1 {
+   transform: translateX(25%) translateY(12%) rotate(-10deg);
+}
+
+.rotate1:hover {
+   transform: translateX(25%) translateY(15%) rotate(-10deg) scale(1.1);
+   z-index: 1000;
+}
+
+.rotate3 {
+   transform: translateX(-25%) translateY(12%) rotate(10deg);
+}
+
+.rotate3:hover {
+   transform: translateX(-25%) translateY(10%) rotate(10deg) scale(1.1);
+   z-index: 1000;
+}
+
+.invisible__gradient{
+   background: linear-gradient(90deg, #f5f8ff 4%, #fff0 23.5%, #fff0 71.5%, #f5f8ff 96%);
+}

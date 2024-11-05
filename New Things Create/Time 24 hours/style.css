@@ -1,0 +1,157 @@
+#h1{
+    background-color: rgb(241, 0, 0);
+}
+
+
+.products::-webkit-scrollbar{
+    display: none;
+}
+
+.categories::-webkit-scrollbar{
+    display: none;
+}
+
+.populars::-webkit-scrollbar{
+    display: none;
+}
+
+.shader{
+    background: linear-gradient(to right bottom, #69628a, #040309);
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #08001f, #30197d);
+  color: #fff;
+  position: relative;
+}
+
+.container {
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  background: #f41b75;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: -1;
+}
+
+.container::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #419aff;
+  position: absolute;
+  right: -30px;
+  bottom: -50px;
+  z-index: -1;
+}
+
+.clock {
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 0, 255, 0.11);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(40px);
+}
+
+.clock span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.clock span::after {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#hrs::after {
+  content: "HOURS";
+}
+
+#min::after {
+  content: "MINS";
+}
+
+#sec::after {
+  content: "SEC";
+}
+
+h1 {
+  border-right: 2px solid black;
+  width: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  animation: typing 3s steps(14), blink 1s infinite;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0px;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

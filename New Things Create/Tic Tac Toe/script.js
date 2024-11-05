@@ -49,13 +49,13 @@ const enableboxes = () => {
     };
 };
 
-// const showWinner = (winner) => {
-//     msg.innerHTML = `Congratulation, Winner is ${winner}`;
-//     msgContainer.classList.remove("hide");
-//     disableboxes(); 
-// }
+const showWinner = (winner) => {
+    msg.innerHTML = `Congratulation, Winner is ${winner}`;
+    msgContainer.classList.remove("hide");
+    disableboxes(); 
+}
 
-// const checkWinner = () => {
+// const checkWiner = () => {
 //     for(let pattern of winPatterns){
 //         let pos1Val = boxes[pattern[0]].innerHTML;
 //         let pos2Val = boxes[pattern[1]].innerHTML;
